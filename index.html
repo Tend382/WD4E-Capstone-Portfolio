@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quang Tuan | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to Main Content</a>
+
+  <header>
+    <div class="header-container">
+      <a class="brand" href="index.html">Quang Tuan Portfolio</a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-bar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact &amp; Extras</a></li>
+          <li><button type="button" id="theme-toggle" class="theme-btn">Dark Mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div>
+        <h1>Front-End Web Developer &amp; Accessible UI Designer</h1>
+        <p>Hello! I am Quang Tuan, a software engineering student passionate about building responsive, accessible, and standards-compliant websites from scratch using semantic HTML5, modern CSS3 (Grid &amp; Flexbox), and vanilla JavaScript.</p>
+        <p><a class="btn-primary" href="projects.html">Explore My Projects</a></p>
+      </div>
+      <img src="images/BaconGallupPark.jpg" alt="Portrait photo in a scenic green park">
+    </section>
+
+    <section>
+      <h2>Core Technical Skills &amp; Responsive Architecture</h2>
+      <p>This portfolio is custom-coded from scratch using a mobile-first layout that adapts seamlessly across three breakpoints: Mobile (&lt;768px, 1 column), Tablet (&ge;768px, 2 columns), and Desktop (&ge;1024px, 3 columns).</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <div>
+            <span class="badge">HTML5 &amp; Accessibility</span>
+            <h3>Semantic &amp; W3C-Compliant Markup</h3>
+            <p>Built with landmark regions, keyboard skip-links, descriptive alternative text, and WCAG AA/AAA color contrast verified with W3C Validator and WAVE.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <span class="badge">CSS3 Grid &amp; Flexbox</span>
+            <h3>Mobile-First Responsive Design</h3>
+            <p>Uses CSS custom properties (variables), fluid grids, flexible navigation bars, and media queries including support for reduced motion preferences.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <span class="badge">JavaScript ES6</span>
+            <h3>Four Interactive Extras</h3>
+            <p>Includes a persistent Dark/Light theme switcher, live project category filtering, a keyboard-accessible Lightbox modal, and real-time form validation.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Quang Tuan. Designed from scratch for the <a href="https://www.coursera.org/specializations/web-design">Web Design for Everybody Capstone</a>.</p>
+  </footer>
+</body>
+
+</html>

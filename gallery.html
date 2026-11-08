@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Quang Tuan Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to Main Content</a>
+
+  <header>
+    <div class="header-container">
+      <a class="brand" href="index.html">Quang Tuan Portfolio</a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-bar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact &amp; Extras</a></li>
+          <li><button type="button" id="theme-toggle" class="theme-btn">Dark Mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <h1>Interactive Photography Lightbox Gallery</h1>
+    <p>Click any photo—or navigate with the <strong>Tab</strong> key and press <strong>Enter</strong>—to open the accessible full-screen preview modal (<strong>Extra #3: Keyboard &amp; Mouse Lightbox</strong>).</p>
+
+    <div class="card-grid">
+      <article class="card">
+        <img class="gallery-trigger" src="images/blooming_trees.png" alt="White and purple blooming spring trees in the park">
+        <h2>Spring Blossoms</h2>
+        <p>Captured during an early morning walk along the botanical trail.</p>
+      </article>
+
+      <article class="card">
+        <img class="gallery-trigger" src="images/mist_over_huron_river.JPG" alt="Morning mist rising gently over the calm river surface">
+        <h2>Misty River Sunrise</h2>
+        <p>Soft fog drifting across the water just after dawn.</p>
+      </article>
+
+      <article class="card">
+        <img class="gallery-trigger" src="images/reflected_tree.JPG" alt="Mirror reflection of autumn trees on a still lake">
+        <h2>Lake Reflections</h2>
+        <p>Symmetrical reflection of shoreline trees under a clear sky.</p>
+      </article>
+
+      <article class="card">
+        <img class="gallery-trigger" src="images/hanging_plants.png" alt="Decorative hanging basket with vibrant red and green foliage">
+        <h2>Botanical Arrangement</h2>
+        <p>Vibrant foliage arranged in a suspended garden basket.</p>
+      </article>
+
+      <article class="card">
+        <img class="gallery-trigger" src="images/red_maple.png" alt="Small Japanese red maple tree beside a doorway">
+        <h2>Japanese Red Maple</h2>
+        <p>Rich crimson leaves contrasting against the entryway.</p>
+      </article>
+
+      <article class="card">
+        <img class="gallery-trigger" src="images/tulips.png" alt="Bright red tulips blooming along a garden path">
+        <h2>Garden Tulips</h2>
+        <p>Fresh spring tulips illuminated by warm afternoon sunlight.</p>
+      </article>
+    </div>
+
+    <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-caption">
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="images/blooming_trees.png" alt="Selected gallery preview">
+        <p id="lightbox-caption">Selected gallery preview</p>
+        <button type="button" id="lightbox-close" class="btn-primary">Close Preview (Esc)</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Quang Tuan. Designed from scratch for the <a href="https://www.coursera.org/specializations/web-design">Web Design for Everybody Capstone</a>.</p>
+  </footer>
+</body>
+
+</html>

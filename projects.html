@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Quang Tuan Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to Main Content</a>
+
+  <header>
+    <div class="header-container">
+      <a class="brand" href="index.html">Quang Tuan Portfolio</a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-bar">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact &amp; Extras</a></li>
+          <li><button type="button" id="theme-toggle" class="theme-btn">Dark Mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <h1>Featured Web Development Projects</h1>
+    <p>Use the interactive filter buttons below (<strong>Extra #2: JavaScript Category Filter</strong>) to sort my completed web applications by technology.</p>
+
+    <div class="filter-bar" role="group" aria-label="Filter projects by category">
+      <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+      <button type="button" class="filter-btn" data-filter="css">CSS3 &amp; Layout</button>
+      <button type="button" class="filter-btn" data-filter="js">JavaScript DOM</button>
+      <button type="button" class="filter-btn" data-filter="responsive">Responsive Design</button>
+    </div>
+
+    <div class="card-grid">
+      <article class="card project-item" data-category="css">
+        <div>
+          <img src="images/bend_in_the_road.png" alt="Screenshot of CSS3 Grid and Flexbox multi-page website">
+          <span class="badge">CSS3 &amp; Layout</span>
+          <h2>Explore Nature Multi-Page Site</h2>
+          <p>A three-page showcase featuring focusable skip-links, Box Model image frames, two-column CSS Grid, Flexbox galleries, and nth-child selectors.</p>
+        </div>
+        <p><a class="btn-primary" href="https://tend382.github.io/CSS-final-project/">View Live Site</a></p>
+      </article>
+
+      <article class="card project-item" data-category="js">
+        <div>
+          <img src="images/huron_river_cascades.JPG" alt="Preview of Accessible Interactive Photo Gallery with keyboard support">
+          <span class="badge">JavaScript DOM</span>
+          <h2>Accessible Interactive Photo Gallery</h2>
+          <p>Dynamic gallery supporting mouse hover and keyboard Tab focus events, automatically injecting tabindex attributes via an onload loop.</p>
+        </div>
+        <p><a class="btn-primary" href="https://tend382.github.io/JS-interactive-gallery/">View Live Site</a></p>
+      </article>
+
+      <article class="card project-item" data-category="responsive">
+        <div>
+          <img src="images/pink_blossoms.png" alt="Preview of Botanical Photography site with dark mode and reduced motion">
+          <span class="badge">Responsive Design</span>
+          <h2>User-Preference Responsive Gallery</h2>
+          <p>Mobile-first responsive grid adapting at 772px and 992px while respecting prefers-reduced-motion and prefers-color-scheme: dark.</p>
+        </div>
+        <p><a class="btn-primary" href="https://tend382.github.io/RD-final-project/">View Live Site</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Quang Tuan. Designed from scratch for the <a href="https://www.coursera.org/specializations/web-design">Web Design for Everybody Capstone</a>.</p>
+  </footer>
+</body>
+
+</html>
